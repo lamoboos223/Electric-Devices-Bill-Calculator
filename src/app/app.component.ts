@@ -17,9 +17,9 @@ export class AppComponent {
     let wattPerHour = (this.watt * this.hours)/1000
     let bill = 0;
     if(wattPerHour <= 6000)
-      bill = 18
+      bill = 0.18
     else
-      bill = 30;
+      bill = 0.30;
     this.result = ((wattPerHour* this.days) * bill);
   }
 }
